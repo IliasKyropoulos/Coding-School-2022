@@ -8,7 +8,20 @@ namespace Exercise_Uni
 {
     public class Person
     {
-    public string Name { get; set; }
-    public ushort Age { get; set; }
+        public Guid ID { get; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public Person()
+        {
+            ID = Guid.NewGuid();
+        }
+        public string GetName()
+        {
+            return Name;
+        }
+        public void SetName(string name)
+        {
+            Name = name;
+        }
     }
 }

@@ -10,14 +10,7 @@ namespace Exercise_Uni
     {
         static void Main(string[] args)
         {
-
-            Student jim = new Student();
-            jim.Name = "jim";
-
-            University university = new University();
-            University.NumberOfStudents = new Student[30];
-
-            
+            Console.ReadLine();
         }
     }
 }

@@ -8,6 +8,16 @@ namespace Exercise_Uni
 {
     public class Student : Person
     {
-    public uint RegistrationNumber { get; set; }
+        public int RegistrationNumber { get; set; }
+        public Course[] Courses { get; set; }
+        public Student()
+        {
+        }
+        public void Attend(Course course, DateTime dateTime)
+        {
+        }
+        public void WriteExam(Course course, DateTime dateTime)
+        {
+        }
     }
 }

@@ -8,7 +8,20 @@ namespace Exercise_Uni
 {
     public class Institute
     {
-    public string Name { get; set; }
-    public ushort YearsInService { get; set; }
+        public Guid ID { get; }
+        public string Name { get; set; }
+        public int YearsInService { get; set; }
+        public Institute()
+        {
+            ID = Guid.NewGuid();
+        }
+        public string GetName()
+        {
+            return Name;
+        }
+        public void SetName(string name)
+        {
+            Name = name;
+        }
     }
 }

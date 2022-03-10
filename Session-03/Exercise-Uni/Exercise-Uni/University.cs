@@ -8,6 +8,30 @@ namespace Exercise_Uni
 {
     public class University : Institute
     {
-        public Student[] NumberOfStudents { get; set; }
+        public Student[] Students { get; }
+        public Course[] Courses { get; }
+        public Grade[] Grades { get; }
+        public Schedule[] ScheduledCourses { get; }
+        public University()
+        {
+            Students = new Student[30];
+            Courses = new Course[20];
+            ScheduledCourses = new Schedule[60];
+        }
+        public Student[] GetStudents()
+        {
+            return Students;
+        }
+        public Course[] GetCourses()
+        {
+            return Courses;
+        }
+        public Grade[] GetGrades()
+        {
+            return Grades;
+        }
+        public void SetSchedule(Guid courseId, Guid professorId, DateTime dateTime)
+        {
+        }
     }
 }
