@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+
+<script>
+	function Palindrome(string) {
+
+    const arrayValues = string.split('');
+
+    const reverseArrayValues = arrayValues.reverse();
+
+    const reverseString = reverseArrayValues.join('');
+
+    if(string == reverseString) {
+        console.log(string, 'is a palindrome.');
+    }
+    else {
+        console.log(string, 'is not a palindrome.');
+    }
+}
+const string = prompt('Enter your string: ');
+
+Palindrome(string);
+</script>
+
+</body>
+</html>
